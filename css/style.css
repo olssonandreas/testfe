@@ -35,15 +35,24 @@ body{
 
 
 .logo {
-	
-
-	max-height: 40px;
+	padding-left:  10px;
+	height: 120px;
 }
+
 
 .wrapper {
 	max-height: inherit;
 	width: 100%;
     border: 2px solid;
+    border-color: #efefef; 
+	border-width: 1px;
+
+}
+.wrapperbg {
+	max-height: inherit;
+	width: 100%;
+	background-color: #efefef;
+    border: 1px solid;
     border-color: #efefef; 
 	border-width: 1px;
 
@@ -61,7 +70,7 @@ body{
 
 	background-color: #efefef;
 	max-width: 100%;
-	max-height: 340px;
+	max-height: 200px;
 
 }
 
@@ -75,59 +84,125 @@ body{
 }
 
 
+/* Carousel---------------------------*/ 
 
-/* Carousel base class */
-.carousel {
-  height: 500px;
-  margin-bottom: 60px;
-}
-/* Since positioning the image, we need to help out the caption */
-.carousel-caption {
-  z-index: 10;
-}
-
-/* Declare heights because of positioning of img element */
-.carousel .item {
-  height: 340px;
-  background-color: #777;
-}
 .carousel-inner > .item > img {
-  position: absolute;
   top: 0;
   left: 0;
   min-width: 100%;
-  height: 500px;
-  -webkit-transition: 0.6s ease-in-out left;
-    -moz-transition: 0.6s ease-in-out left;
-    -o-transition: 0.6s ease-in-out left;
-    transition: 0.6s ease-in-out left;
-
 
 }
 
-/* NAV */ 
+
+.carousel-indicators{
+	bottom: -50px;
+
+}
+.carousel-indicators li{
+
+	 background-color: #999;
+  background-color: rgba(70,70,70,.25);
+}
+
+.carousel-indicators .active{
+background-color: #000000;
+
+		}
+
+/* NAV ----------------------------*/ 
+
+.navbar-default {
+  border-color: #FFF;
+  margin-bottom: 0px;
+}
+
+/* navbar focus  */
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+  color: #efefef;
+}
+
+/* active top nav */
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  color: #000000;
+  background-color: #efefef;
+    font-size: 14px;
+
+}
 
 
-.navbar{
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+  background-color: #efefef;
+}
+.navbar-default .navbar-toggle {
+    color: #000000;
+
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+  background-color: #efefef;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #ffffff;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #000000;
+}
+
+/* nav bar top active */
+.navbar-default .navbar-link {
+  color: #000000;
+}
+
+.navbar-default .navbar-link:hover {
+  color: #000000;
+}
+
+
+.navbar-nav > li > a {
+padding-top: 5px !important;
+padding-bottom: 5px !important;
+	}
+
+
+.navbar 
+{
+	min-height: 30px;
 	border: 0;
 	border-radius: 0px;
 	margin-bottom: 0px; 
 	background-color: #FFF;
-	height: 40px;
+
 }
 
-.navmax {
+/* top nav list */
+.navbar-default .navbar-nav > li > a {
+  color: #000000;
+  font-size: 14px;
 
-
-	max-height: 10px;
-	max-width: 1170px;
 }
 
-/* ICONS */ 
+ .subnav {
+ 	padding-left: 5px;
+	min-height: 40px !important;
+	padding-top:5px !important; 
+	padding-bottom:5px !important;  color: #000000;
 
-.iconlarge {
+}
+.subnav > li > a {
 
-  font-size: 1.33333333em;
+  font-size: 22px !important;
+
+}
+
+
+
+
+
+/* ICONS ---------------------------*/ 
+
+.icon-large {
+
+  font-size: 1.35em;
   line-height: 0.75em;
   vertical-align: -15%;
 }
@@ -185,11 +260,56 @@ body{
 	content: "\e604";
 }
 
-/*  FORMS */
+/*  FORMS-------------------- */
 
 .form-search {
 	height: 10px;
 	margin-right: 10px;
-	margin-top: 8px;
+	margin-top: 6px;
+}
+.search-box {
+	display: hidden;
+	height: 20px;
+	border: 0;
+    width: 0px;
+    transition: all 0.6s ease;
+}
+
+.expanded {
+	display: visible;
+	border: 0;
+	transition: all 0.6s ease;
+    width: 150px;
+}
+
+
+input, input:focus {
+	 outline: 0;
+	background-color: #efefef;
+	-webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+	}
+
+
+
+	/* MOBILE ------------------------------ /*
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 320px) {
+
+  .hidecontent{
+  	display: none;
+  }
+}
+
+
+
+@media only screen and (max-width : 480px) {
+  
+  .hidecontent{
+  	display: none;
+  }
+
 }
 

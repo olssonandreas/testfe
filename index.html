@@ -1,94 +1,126 @@
-<!-- FE test for pixelant made by Andreas Olsson 
-hello@andreas-olsson.se
---> 
-
-
-
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Your company name</title>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/style.css">
-
-  </head>
-  <body> 
+<head>
 
 
+	<meta charset="utf-8">
 
-      <!-- Static navbar -->
-      <div class="wrapper">
-      <div class="container-fluid">
-      <nav class="navbar navbar-default">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-          </div>
-          <div id="navbar" class="navbar-collapse collapse">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="description" content="Your company">
+	<meta name="keywords" content="business, sales, company">
+	<meta name="author" content="Andreas Olsson">
+	<title>Your company name</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
 
-            <ul class="nav navbar-nav navbar-right">
-              <li>
-              <form class="form-inline form-search">
-  			  <div class="form-group">
-    	      <label for="search"><span class="iconlarge" data-icon="&#xf02e"></span>
-</label>
-    		  <input type="search" class="form-control" id="search" placeholder="Search">
-  			  </div></form></li>
-              <li class="active"><a href="./">Default <span class="sr-only">(current)</span></a></li>
-              <li><a href="../navbar-static-top/">Static top</a></li>
-              <li><a href="../navbar-fixed-top/">Fixed top</a></li>
+</head>
+<body> 
+	<!-- Static navbar -->
+	<div class="wrapper">
+		<div class="container-fluid">
+			<nav class="navbar navbar-default">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+				<div id="navbar" class="navbar-collapse collapse topnav">
+					<ul class="nav navbar-nav navbar-right">
 
-            </ul>
+						<li class="form-search">
+							<span class="icon-large magnifying-glass" data-icon="&#xf02e"></span>
+							<input class='search-box' type='text' id='search-string' name='search-string' placeholder="">
+
+						</li>
+
+						<li class="active"><a href="./">Home <span class="sr-only">(current)</span></a></li>
+						<li><a href="../navbar-static-top/">Sitemap</a></li>
+						<li><a href="../navbar-fixed-top/">Login</a></li>
+
+					</ul>
 
 
-</div><!--/.nav-collapse -->
-            	<div class="collapse navbar-collaps">
-              <ul class="nav navbar-nav">
-              <li class="active"><a href="./">Default <span class="sr-only">(current)</span></a></li>
-              <li><a href="../navbar-static-top/">Static top</a></li>
-              <li><a href="../navbar-fixed-top/">Fixed top</a></li>
-            </ul>
-        </div>
-          
+				</div><!--/.nav-collapse -->
+				<div class="collapse navbar-collaps">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="./">Default <span class="sr-only">(current)</span></a></li>
+						<li><a href="../navbar-static-top/">Static top</a></li>
+						<li><a href="../navbar-fixed-top/">Fixed top</a></li>
+					</ul>
+				</div>
 
-      </nav>
-      	</div>
-      </div>
-      	                  		
 
-      	     <div class="container-fluid">
+			</nav>
+		</div>
+	</div>
 
-            <div class="logo">
-            	<h1>Site logo </h1>
-            </div>
-        </div>
-  <div class="wrapper">
 
-      	     <div class="container-fluid">
+	<div class="container-fluid">
 
- <div class="hidden-sm hidden-xs">     
-<nav class="navbar navbar-default" role="navigation">
-  <!-- Brand and toggle get grouped for better mobile display -->
-  <div class="navbar-header">
-    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="navbar-collapse">
-      <span class="sr-only">Toggle navigation</span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-    </button>
-    <a class="navbar-brand" href="#">Sub menu</a>
-  </div>
-</div>
-</div>
-</div> <!-- container fluid -->
-  <!-- Collect the nav links, forms, and other content for toggling -->
-  
+		<div class="logo">
+				<h1>Site logo </h1>
+			
+		</div>
+	</div>
+	<div class="wrapper">
+
+		<div class="container-fluid">
+
+			<div class="hidden-xs">     
+				<nav class="navbar navbar-default subnav" role="navigation">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="navbar-collapse">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+
+						<ul class="nav navbar-nav subnav">
+
+							<li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+							<li><a href="#">About</a></li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Solutions<span class="caret"></span></a>
+								<ul class="dropdown-menu" role="menu">
+									<li><a href="#">Action</a></li>
+									<li><a href="#">Another action</a></li>
+									<li><a href="#">Something else here</a></li>
+									<li class="divider"></li>
+									<li><a href="#">Separated link</a></li>
+									<li class="divider"></li>
+									<li><a href="#">One more separated link</a></li>
+								</ul>
+							</li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Features<span class="caret"></span></a>
+								<ul class="dropdown-menu" role="menu">
+									<li><a href="#">Action</a></li>
+									<li><a href="#">Another action</a></li>
+									<li><a href="#">Something else here</a></li>
+									<li class="divider"></li>
+									<li><a href="#">Separated link</a></li>
+									<li class="divider"></li>
+									<li><a href="#">One more separated link</a></li>
+								</ul>
+							</li>
+							<li><a href="#">About</a></li>
+							<li><a href="#">Contact</a></li>
+
+						</ul>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div> <!-- container fluid -->
+	<!-- Collect the nav links, forms, and other content for toggling -->
+
 </nav>
 
 
@@ -96,76 +128,91 @@ hello@andreas-olsson.se
 
 
  <!-- Carousel
-    ================================================== -->
+ ================================================== -->
 
 
+<div class="wrapperbg">
+ <div class="container-fluid hidecontent">
 
-      	<div class="container-fluid">
+ 	<div id="myCarousel" class="carousel slide" data-ride="carousel">
+ 		<!-- Indicators -->
 
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner" role="listbox">
-        <div class="item active">
-          <img src="images/wm16801050.png" alt="First slide">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Example headline.</h1>
-              <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img src="images/wm16801050.png" alt="Second slide">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Another example headline.</h1>
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img src="images/wm16801050.png" alt="Third slide">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>One more for good measure.</h1>
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
-            </div>
-          </div>
-        </div>
-      </div>
-    
-    </div><!-- /.carousel -->
-</div>
-
+ 		<div class="carousel-inner" role="listbox">
+ 			<div class="item active">
+ 				<img src="images/wm16801050.png" class="img-responsive" width="1170"  alt="First slide">
+ 				<div class="container">
+ 					<div class="carousel-caption">
+ 						<div class="col-md-12">
+ 							<h1 class="slider">Lorum ipsum dolor sit</h1>
+ 							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam,</p>
+ 							<p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+ 						</div>
+ 					</div>
+ 				</div>
+ 			</div>
+ 			<div class="item">
+ 				<img src="images/wm16801050.png" class="img-responsive" width="1170" alt="Second slide">
+ 				<div class="container">
+ 					<div class="carousel-caption">
+ 						<div class="col-md-12">
+ 							<h1 class="slider">Lorum ipsum dolor sit</h1>
+ 							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam,</p>
+ 							<p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+ 						</div>
+ 					</div>
+ 				</div>
+ 			</div>
+ 			<div class="item">
+ 				<img src="images/wm16801050.png" class="img-responsive" width="1170"  alt="Third slide">
+ 				<div class="container">
+ 					<div class="carousel-caption">
+ 						<div class="col-md-12">
+ 							<h1 class="slider">Lorum ipsum dolor sit</h1>
+ 							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam,</p>
+ 							<p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+ 						</div>
+ 					</div>
+ 				</div>
+ 			</div>
+ 		</div>
+ 		<ol class="carousel-indicators">
+ 			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+ 			<li data-target="#myCarousel" data-slide-to="1"></li>
+ 			<li data-target="#myCarousel" data-slide-to="2"></li>
+ 		</ol>
+ 	</div>
+ </div><!-- /.carousel -->
+</div><!-- containter -->
+</div> <!-- wrapperbg -->
 
 
 <div class="container">
 
-    </div> <!-- /container -->
 
 
 
 
 
-           <span class="iconlarge" data-icon="&#xe602;"></span>
+</div> <!-- /container -->
+
+
+
+
+
+<span class="iconlarge" data-icon="&#xe602;"></span>
 
 
 <!-- script loading in the end for faster loading times. -->
 
 
 <!-- jquery --> 
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-  </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <!-- Bootstrap javascript-->
 <script src="js/bootstrap.min.js"></script>
+<script src="js/custom.js"></script>
+
+</body>
+
 
 
 </html>
