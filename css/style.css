@@ -146,7 +146,9 @@ p.slide-text{
 
 .btn-slider {
 
+
 	background-color: #ff5700;
+	white-space: normal;
 	border-style: none;
 	border-radius: 5px;
 	max-height: 50px;
