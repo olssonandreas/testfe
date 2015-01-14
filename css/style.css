@@ -52,7 +52,7 @@ padding-top: 20px;
 
 .wrapper {
 	max-height: inherit;
-	width: 100%;
+	max-width: 100%;
     border: 1px solid;
     border-color: #efefef; 
 	border-width: 1.5px;
@@ -60,7 +60,7 @@ padding-top: 20px;
 }
 .wrapperbg {
 	max-height: inherit;
-	width: 100%;
+	max-width: 100%;
 	background-color: #efefef;
 
 }
@@ -379,13 +379,13 @@ input, input:focus {
 .mobile-jumbotron {
 	display: block;
 	background-image: url('../images/wm16801050.png');
-		background-repeat:no-repeat;
--webkit-background-size:cover;
--moz-background-size:cover;
--o-background-size:cover;
-background-size:cover;
-background-position:center;
-    	background-repeat: no-repeat;
+	background-repeat:no-repeat;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+	background-position:center;
+    background-repeat: no-repeat;
     	height: 340px;
 }
 
