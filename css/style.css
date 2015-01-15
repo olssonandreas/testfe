@@ -144,17 +144,19 @@ p.slide-text{
 
 }
 
+.btn {
+
+}
+
 .btn-slider {
 
-
 	background-color: #ff5700;
-	white-space: normal;
 	border-style: none;
 	border-radius: 5px;
 	max-height: 50px;
 	font-size: 14px;
-	margin-right: 80%;
 	max-width: 160px;
+	margin-right:  400px;
 	margin-top: 2%;
 
 }
@@ -193,6 +195,7 @@ p.slide-text{
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
   border-color: #000000;
+  border-top: 0px;
 }
 
 /* nav bar top active */
@@ -324,12 +327,15 @@ color:#ff5700;
 /*  FORMS-------------------- */
 
 .form-search {
+	padding: 20px;
+	padding-left: 15px;
+	padding-top: 3px;
 	height: 10px;
-	margin-right: 10px;
-	margin-top: 6px;
 }
 .search-box {
 	display: hidden;
+
+	margin-bottom: 20px;
 	height: 20px;
 	border: 0;
     width: 0px;
@@ -337,10 +343,11 @@ color:#ff5700;
 }
 
 .expanded {
+			margin-right: 20px;
 	display: visible;
 	border: 0;
 	transition: all 0.6s ease;
-    width: 150px;
+    width: 100px;
 }
 
 
@@ -393,16 +400,17 @@ input, input:focus {
 
 }
 
-@media only screen and (max-width : 480px) {
+@media only screen and (max-width : 768px) {
   
   .hidecontent{
   	display: none;
   }
+.form-search {
 
+	display: none;
+}
 .mobile-jumbotron {
 		display: block;
-
-
 	background-image: url('../images/wm16801050.png');
 	background-repeat:no-repeat;
 -webkit-background-size:cover;
@@ -432,7 +440,6 @@ p.slide-text{
 
 .btn-slider {
 	font-size: 14px;
-	margin-right: 80%;
 	max-width: 160px;
 	margin-top: 5%;
 
