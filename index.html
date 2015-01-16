@@ -14,52 +14,32 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link href='http://fonts.googleapis.com/css?family=Raleway:400,300,500,600' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+<!--[if lte IE 8]>
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300" /> 
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Raleway:400,300,500,600" /> 
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:800" />
+<![endif]-->
 
 </head>
 <body> 
 	<!-- Static navbar -->
 	<div class="wrapper">
 		<div class="container-fluid">
-			<nav class="navbar navbar-default">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-				</div>
-				<div id="navbar" class="navbar-collapse collapse topnav">
-					<ul class="nav navbar-nav navbar-right">
-
-						<li class="form-search">
-							<span class="icon-large magnifying-glass" data-icon="&#xf02e"></span>
-							<input class='search-box' type='text' id='search-string' name='search-string' placeholder="">
-
+			<nav class="top-nav">
+				
+					<ul class="small-nav">
+						<li class="form-search small-nav">
+						<span class="icon-large magnifying-glass" data-icon="&#xf02e"></span>
+						<input class='search-box' type='text' id='search-string' name='search-string' placeholder="">
 						</li>
-
-						<li class="active"><a href="#"><span class="icon-large" data-icon="&#xf08d"></span>Home <span class="sr-only " >(current)</span></a></li>
-						<li><a href="../navbar-static-top/"><span class="icon-large" data-icon="&#xf020"></span>Sitemap</a></li>
-						<li><a href="../navbar-fixed-top/"><span class="icon-large" data-icon="&#xf018"></span>Login</a></li>
-
+						<li class="active small-nav"><a href="#"><span class="icon-large" data-icon="&#xf08d"></span>Home <span class="sr-only " >(current)</span></a></li>
+						<li class="small-nav hidecontent"><a href="../navbar-static-top/"><span class="icon-large" data-icon="&#xf020"></span>Sitemap</a></li>
+						<li class="small-nav"><a href="../navbar-fixed-top/"><span class="icon-large" data-icon="&#xf018"></span>Login</a></li>
 					</ul>
-
-
-				</div><!--/.nav-collapse -->
-				<div class="collapse navbar-collaps">
-					<ul class="nav navbar-nav">
-						<li class="active"><a href="./">Default <span class="sr-only">(current)</span></a></li>
-						<li><a href="../navbar-static-top/">Static top</a></li>
-						<li><a href="../navbar-fixed-top/">Fixed top</a></li>
-					</ul>
-				</div>
-
-
 			</nav>
 		</div>
 	</div>
-
-
 	<div class="container-fluid">
 
 		<div class="logo">
@@ -74,13 +54,17 @@
 		<div class="container-fluid">
 			<div class="navbar navbar-default subnav" role="navigation">
 				<div class="navbar-header">
+					<a class="navbar-brand hidden-lg hidden-md hidden-sm">Menu</a>
+
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nvs">
 						<span class="sr-only">Toggle navigation</span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
+				</div>
 					<div class="navbar-collapse collapse nvs">
+
 						<ul class="nav navbar-nav subnav">
 
 							<li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
@@ -114,7 +98,6 @@
 
 						</ul>
 					</div>
-				</div>
 			</div>
 		</div><!-- container fluid -->
 	</div> 
@@ -188,24 +171,174 @@
 	<div class="mobile-jumbotron">
 
 		<div class="overlay-w">
-
-			<div class="container-fluid">
+				<div class="row">
 				<h1 class="slider">Lorum ipsum dolor sit</h1>
-				<p class="slide-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor </p>
-				<p><a class="btn btn-default" href="#" role="button">CALL TO ACTION</a></p>
 			</div>
+			<div class="row">
+				<p class="slide-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor </p>
+			</div><div class="row">
+<p><a class="btn btn-lg btn-primary btn-slider" href="#" role="button">CALL TO ACTION</a></p>
+</div>
+
 		</div>
 	</div>
 
 </div> <!-- jumbotron -->
-</div> <!-- /container -->
+</div> <!-- /wrapper -->
+
+<div class="continer-fluid">
+	<div class="services s1">
+<div class="row">
+
+        <div class="col-md-4">
+          <div class="servicelogo"><span class="icon-service" data-icon="&#xf0d3"></span><span class="sr-only " >(current)</span></div>
+          <h2>Our services</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><br>
+          <p><a class="btn btn-default" href="#" role="button">Read more</a></p>
+        </div><!-- /.col-md-4 -->
+        
+        <div class="col-md-4">
+          <div class="servicelogo"><span class="icon-service" data-icon="&#xf07d"></span><span class="sr-only " >(current)</span></div>
+          <h2>Our Services</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><br>
+          <p><a class="btn btn-default" href="#" role="button">Read more</a></p>
+        </div><!-- /.col-md-4 -->
+    	
+        <div class="col-md-4">
+            <div class="servicelogo"><span class="icon-service" data-icon="&#xf096"></span><span class="sr-only " >(current)</span></div>
+
+          <h2>Our services</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><br>
+          <p><a class="btn btn-default" href="#" role="button">Read more</a></p>
+        </div><!-- /.col-md-4 -->
+    </div>
+      </div><!-- /.row -->
 
 
 
+</div><!-- container fluid -->
+<div class="container-fluid">
+<div class="line"></div>
+</div>
+
+<div class="container-fluid">
+	<div class="services service-row-2">
+
+<div class="row">
+        <div class="col-md-4">
+         <img src="images/placeholder.png" class="img-responsive">
+          <h2>Our services</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+         <a href="" class="service-row-2-link">Read more</a>
+        </div><!-- /.col-md-4 -->
+        
+        <div class="col-md-4">
+          <img src="images/placeholder.png" class="img-responsive">
+          <h2>Our Services</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+         <a href="" class="service-row-2-link">Read more</a>
+        </div><!-- /.col-md-4 -->
+    	
+        <div class="col-md-4">
+            <img src="images/placeholder.png" class="img-responsive">
+
+          <h2>Our services</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+         <a href="" class="service-row-2-link">Read more</a>
+        </div><!-- /.col-md-4 -->
+    </div>
+      </div><!-- /.row -->
+</div>
+<div class="carousel-logo hidecontent">
+<div class="container-fluid">
+<div class="col-md-10 col-md-offset-1">
+<div class="carousel2 slide" data-ride="carousel2" data-type="multi" data-interval="3000" id="myCarousel2">
+  <div class="carousel-inner">
+    <div class="item active">
+                  <div class="col-md-3 col-sm-6 col-xs-12">
+                  <a href="#"><img src="images/google.jpg" class="img-responsive" width="150"></a></div>
+                </div>
+                <div class="item">
+                	 <div class="col-md-3 col-sm-6 col-xs-12">
+                  <a href="#"><img src="images/intel.png" class="img-responsive" width="150"></a></div>
+                </div>
+              
+                <div class="item">
+                 <div class="col-md-3 col-sm-6 col-xs-12">
+                  <a href="#"><img src="images/ibm.gif" class="img-responsive" width="150"></a></div>
+                </div>
+                <div class="item">
+                   <div class="col-md-3 col-sm-6 col-xs-12">
+                  <a href="#"><img src="images/samsung.png" class="img-responsive" width="150"></a></div>
+                </div>
+          </div>
+          <a class="left carousel-control" href="#myCarousel2" data-slide="next"><span class="icon-large" data-icon="&#xf0a4;"></a>
+          <a class="right carousel-control" href="#myCarousel2" data-slide="prev"><span class="icon-large" data-icon="&#xf078;"></a>
+        </div>
+    </div>
+</div>
+</div>
 
 
-<span class="iconlarge" data-icon="&#xe602;"></span>
+<footer>
 
+<div class="container-fluid">
+
+<div class="row">
+		<div class="col-footer">
+
+<div class="col-md-2 col-sm-6"><div class="col-footer-item">
+<h3>CONTACT US</h3>PIXELANT AB <br>Regementsgatan 8<br>
+SE 211 42 Malmö <br>Sweden<br></div></div>
+<div class="col-md-4 col-sm-6 col-sm-offset-1"><div class="col-footer-item"><span class="icon-contact" data-icon="&#xf038;"></span> <h4>CALL US ON</h4><a href="tel:+46(0)402607700"> <strong>+46(0)40 260 77 00</strong></a><br><span class="icon-contact" data-icon="&#xf0be;"></span><h4>EMAIL US AT </h4><a href="mailto:mail.com"><strong>info@mail.com</strong></a>
+<br><br><h4>FOLLOW US</h4>
+<ul>
+<li><a href="#"><span class="icon-footer" data-icon="&#xe604"></span></a></li>
+<li><a href="#"><span class="icon-footer" data-icon="&#xe600"></span></a></li>
+<li><a href="#"><span class="icon-footer" data-icon="&#xe601"></span></a></li>
+<li><a href="#"><span class="icon-footer" data-icon="&#xe602"></span></a></li>
+<li><a href="#"><span class="icon-footer" data-icon="&#xe603"></span></a></li>	
+</ul></div></div>
+<div class="col-md-5 col-sm-12 col-xs-12">
+<form class="form-horizontal">
+  <div class="form-group">
+    <label for="inputEmail" class="col-sm-2 control-label"></label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="inputName" placeholder="Name">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputEmail" class="col-sm-2 control-label"></label>
+    <div class="col-sm-10">
+      <input type="password" class="form-control" id="inputEmail" placeholder="Email">
+    </div>
+  </div>
+  <div class="form-group">
+      <label for="inputPassword3" class="col-sm-2 control-label"></label>
+          <div class="col-sm-10">
+
+      <textarea class="form-control" rows="4"></textarea>
+</div>
+  </div>
+
+  <div class="form-group">
+     <div class="col-md-12">
+      <button type="submit" class="btn btn-default btn-submit pull-right">SUBMIT</button>
+    </div>
+    </div>
+  </div>
+</form>
+</div>
+
+</div>
+
+
+
+</div>
+</div>
+</footer>
+
+All Rights Reserved 201
 
 <!-- script loading in the end for faster loading times. -->
 
