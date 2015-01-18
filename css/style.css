@@ -1,4 +1,5 @@
 body{
+
 	-webkit-font-smoothing: antialiased;
 	font-family: 'Raleway', sans-serif;
 	color: #333333;
@@ -8,15 +9,14 @@ textarea {
     resize: none;
 }
 
-.hideme
-{
-    opacity:0;
-}
+
+
 .logo {
-	padding-left:  10px;
+
 	height: 120px;
 }
 .logo-text{
+	margin-left: 20px;
 	padding-top: 20px;
 }
 .wrapper {
@@ -37,19 +37,22 @@ textarea {
 	border-color: #efefef; 
 	border-width: 1.5px;
 }
-.row{
-	margin: 0 auto;
-}
+
 .container-fluid {
 	max-width: 1170px;
 	padding: 0px;
 	border-radius: 0px;
 }
+
+.row{
+	margin-left: 0px;
+	margin-right: 0px;
+}
 .services {
 	max-width: 1170px;
 	margin-top: 30px !important;
 	font-family: 'Open Sans', sans-serif;
-	font-weight: 300 !important; 
+	font-weight: 400 !important; 
 	color: #646464 !important;
 	text-align: center;
 	margin: 0 auto;
@@ -79,7 +82,7 @@ a.service-row-2-link{
 h2{
 	font-size: 22px;
 	color: #4e4e4e;
-	font-weight: 300;
+	font-weight: 400;
 }
 h3 {
 	margin-top: 0px;
@@ -99,14 +102,6 @@ h4{
 	max-width: 1170px;	
 }
 
-.col-footer {
-	margin: 0 auto;
-	margin-top: 80px;
-	margin-bottom: 110px;
-}
-.col-footer-item {
-	margin-top: 20px;
-}
 .form-control{
 	border-style: none;
 }
@@ -145,8 +140,8 @@ h4{
 	text-align: left;
 	color: #000000;
 	text-shadow: none;
-	padding-left: 40px;
-	padding-right: 50px;
+	padding-left: 15px;
+	padding-right: 10px;
 	height: 100%;
 	bottom: 0px;
 	left: 20%;
@@ -166,11 +161,12 @@ h4{
 	height: 80px !important;
 }
 .carousel-control{ 
-	width: 4%;
+	width: auto;
 }
 
 
 .carousel-control.left,.carousel-control.right {
+
 	margin-top: 10px;
 	background-image:none;
 }
@@ -227,67 +223,92 @@ footer a{
 footer ul {
 
 	-webkit-padding-start: 0px;
+	-moz-padding-start: 0%;
 }
 footer li {
 	list-style: none;
 	display: inline;
+	margin: 0px;
+}
+.col-footer {
+	margin: 0 auto;
+	margin-top: 80px;
+	margin-bottom: 110px;
+}
+.col-footer-item {
+	margin-top: 20px;
 }
 
 
 
+/* CUSTOM TEXT FORMATTING -------------------- */
+h1.slider{
+	color: #333333;
+	margin-top: 50px;
+	font-weight: 700 !important;
+	font-size: 46px;
+		}
+p.slide-text{
+	padding-right: 20px;
+	margin-top: 10px;
+	font-weight: 400;
+	font-size: 22px;
+	color: #333333;	
+	
+		}
+/* BUTTONS ---------------------- */
+.btn-slider {
+	float:left;
+	background-color: #ff5700;
+	color: #FFF;
+	border-style: none;
+	border-radius: 5px;
+	max-height: 40px;
+	font-size: 14px;
+	line-height: 10px;
+	font-weight: 600;
+	max-width: 200px;
+	margin-top: 2%;
+		}
+.btn-slider:hover{
+	background-color: #e24f04;
+		}
+.btn-submit {
+	padding-left: 15px;
+	padding-right: 15px;
+	color: #FFF;
+	background-color: #ff5700;
+		}
 
-		/* CUSTOM TEXT FORMATTING -------------------- */
-		h1.slider{
-			color: #333333;
-			margin-top: 50px;
-			font-weight: 600;
-			font-size: 40px;
-		}
-		p.slide-text{
-			padding-right: 20px;
-			margin-top: 10px;
-			font-weight: 400;
-			font-size: 20px;
-			color: #333333;	
-			text-align: justify;
-		}
-		/* BUTTONS ---------------------- */
-		.btn-slider {
-			float:left;
-			background-color: #ff5700;
-			color: #FFF;
-			border-style: none;
-			border-radius: 5px;
-			max-height: 40px;
-			font-size: 14px;
-			max-width: 160px;
-			margin-top: 2%;
-		}
-		.btn-slider:hover{
-			background-color: #e24f04;
-		}
-		.btn-submit {
-			padding-left: 15px;
-			padding-right: 15px;
-			color: #FFF;
-			background-color: #ff5700;
-		}
-		/* NAV ----------------------------*/ 
-		.small-nav {
-			max-height: 30px;
-			padding-top: 10px;
-		}
-		ul.small-nav{
-			float: right;
-			list-style-type: none;
 
+/* NAV ----------------------------*/ 
+.small-nav {
+	max-height: 30px;
+	padding-top: 10px;
 		}
-		li.small-nav{
-			padding: 10px;
-			display: inline;
-			width: 100%;
-			height: 20px;
+ul.small-nav{
+	float: right;
+	list-style-type: none;
 		}
+.small-nav li{
+    font-weight: 500;
+	padding: 10px;
+	display: inline;
+	width: 100%;
+	height: 20px;
+		}
+
+ .navbar-default .navbar-nav > .active{
+   background: #FFF;
+ }
+ .navbar-default .navbar-nav > .active > a, 
+ .navbar-default .navbar-nav > .active > a:hover, 
+ .navbar-default .navbar-nav > .active > a:focus {
+      background: #FFF;
+ }
+
+
+
 		/* navbar focus text  */
 		.small-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
 			text-decoration: underline;
@@ -299,7 +320,7 @@ footer li {
 		/* collapsed navbar logo */
 		.navbar-brand {
 			margin-left: 5px;
-			font-weight: 300;
+			font-weight: 400;
 			color: #000000!important;
 		}
 		/* navbar focus text  */
@@ -308,21 +329,22 @@ footer li {
 		}
 		
 		.navbar 
-		{
+		{	
 			border: 0;
 			border-radius: 0px;
 			margin-bottom: 0px; 
 		}
 		.subnav {
 			min-height: 40px !important;
-			margin-left: -15px;
 			background-color: #FFF;
 		}
 		.subnav > li > a {
+			margin-left: 0px;
+			font-family: 'Raleway', sans-serif;
 			color: #333333 !important;
-			padding-top: 15px !important;
-			padding-bottom: 15px !important;
-			font-weight: 300 !important;
+			padding-top: 17px !important;
+			padding-bottom: 13px !important;
+			font-weight: 500 !important;
 			font-size: 20px !important;
 		}
 		/* ICONS ---------------------------*/ 
@@ -360,10 +382,9 @@ footer li {
 		.icon-service{
 			font-size: 5em;
 			color:#FFF;
-			vertical-align: -10%;
 		}
+		
 		.icon-carousel {
-			margin-left: 15px;
 			color: #000000;
 		}
 		.icon-footer{
@@ -371,6 +392,15 @@ footer li {
 			font-size: 3em;
 			vertical-align: -10%;
 		}
+		.icon-footer:hover{
+			color: #ff5700;
+			text-decoration: none;
+
+		}
+		.icon-footer a {
+			text-decoration: none !important;
+		}
+
 		.icon-contact {
 		font-size: 2em;
 		padding-right: 10px;
@@ -480,6 +510,8 @@ footer li {
 			}
 		}
 		@media only screen and (max-width : 550px) {
+
+
 			.subnav > li > a {
 				border-bottom: 2px dotted #efefef;
 				text-decoration: none;
@@ -507,7 +539,15 @@ footer li {
 			h1.slider{
 				float: left !important;
 				margin-top: 80px;
-				font-weight: 600;
 				font-size: 30px;
 			}
+			.form-group {
+				margin-bottom: 5px !important;
+			}
 		}
+/* better font on high res screens and chrome/safari */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.25), only screen and ( min-device-pixel-ratio: 1.25), only screen and ( min-resolution: 200dpi), only screen and ( min-resolution: 1.25dppx){
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+
